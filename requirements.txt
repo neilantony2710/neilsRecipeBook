@@ -5,7 +5,7 @@ Flask-PyMongo==2.3.0
 google-auth==1.16.0
 google-auth-oauthlib==0.4.1
 google-pasta==0.2.0
-Jinja2==2.11.1
+Jinja2==2.11.3
 pymongo==3.10.1
 pyparsing==2.4.7
 python-dateutil==2.8.1
