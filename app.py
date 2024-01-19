@@ -110,7 +110,10 @@ def login():
         y = users.query.filter_by(email=email).first()
         print(y)
         if y is None:
-            flash("incorrect information")
+            flash("incorrect email try again")
+            return redirect("/login")
+        elif y.password != password:
+            flash("incorrect password try again")
             return redirect("/login")
         else:
             session["login"] = email
